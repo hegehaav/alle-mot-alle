@@ -1,13 +1,16 @@
 import React from 'react';
+import Match from './components/match/Match';
+import { teams } from './constants.js';
 
-import './index.css';
+import './app.css';
 
-const App = () => {
-    return (
-        <main className='main--container center'>
-            <h1>Hello React 👋</h1>
-        </main>
-    );
-};
+const App = () => (
+    <main className='main--container center'>
+        <div className='title--container'>
+            <h1 className='title'>ALLE MOT ALLE</h1>
+        </div>
+        <Match teams={teams} />
+    </main>
+);
 
 export default App;
