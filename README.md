@@ -8,9 +8,9 @@ Bekk presenterer sin helt egne produksjon av alle mot alle.
 | --------- | ----------------------------------- |
 | André     | Alle-mot-alle fantast👨‍🔬💪           |
 | Gaute     | Quizmaster❓⭐️                     |
-| Hege      | Quenn boss 👸💼                     |
-| Henrietta | Sourtuell ledsager og sparrepartner |
-| Linus     | Quen boss sin høyre hånd 👸👋       |
+| Hege      | Queen boss 👸💼                     |
+| Henrietta | Spirituell ledsager og sparrepartner |
+| Linus     | Queen boss sin høyre hånd 👸👋       |
 
 ## Develop
 
