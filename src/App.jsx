@@ -2,7 +2,7 @@ import React from 'react';
 import Match from './components/match/Match';
 import { teams } from './constants.js';
 
-import './app.css';
+import './App.css';
 
 const App = () => (
     <main className='main--container center'>

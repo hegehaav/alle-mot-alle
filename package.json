@@ -1,22 +1,24 @@
 {
-    "name": "hello-react",
+    "name": "alle-mot-alle",
     "version": "1.0.0",
     "description": "Template react repository",
     "main": "index.js",
     "scripts": {
         "build": "webpack",
-        "start": "webpack serve --open 'Google Chrome'",
+        "start": "node server.js",
         "update": "npx npm-check-updates -u"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hegehaav/hello-react.git"
+        "url": "git+https://github.com/hegehaav/alle-mot-alle.git"
     },
     "bugs": {
-        "url": "https://github.com/hegehaav/hello-react/issues"
+        "url": "https://github.com/hegehaav/alle-mot-alle/issues"
     },
-    "homepage": "https://github.com/hegehaav/hello-react#readme",
+    "homepage": "https://github.com/hegehaav/alle-mot-alle#readme",
     "dependencies": {
+        "express": "^4.17.1",
+        "path": "^0.12.7",
         "react": "17.0.1",
         "react-countdown": "^2.3.1",
         "react-dom": "17.0.1"
