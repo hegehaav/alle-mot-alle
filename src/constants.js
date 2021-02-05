@@ -12,6 +12,13 @@ export const teams = [
         ],
     },
     {
+        name: 'Ukjent',
+        members: [
+            { name: 'Spiller1' },
+            { name: 'Spiller2' },
+        ]
+    },
+    {
         name: 'Svenskene',
         members: [
             { name: 'Sjakk-Linus', img: linusImg },
@@ -19,3 +26,11 @@ export const teams = [
         ],
     },
 ];
+
+export const matches = [
+    {
+        id: 1,
+        teams: [teams[0], teams[1]],
+        date: new Date("2021-02-15")
+    }
+]

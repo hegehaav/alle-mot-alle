@@ -3,15 +3,15 @@ import Team from '../team/Team';
 import './match.css';
 import Countdown from 'react-countdown';
 
-const Match = ({ teams }) => {
+const Match = ({ match }) => {
     return (
         <div className='match--container'>
             <Countdown
                 className='match-countdown'
-                date={new Date('2021-02-15')}
+                date={match.date}
             />
             <div className='team--one'>
-                <Team members={teams[0].members} />
+                <Team members={match.teams[0].members} />
             </div>
             <div className='match-divider'>
                 <div className='line'></div>
@@ -20,7 +20,7 @@ const Match = ({ teams }) => {
             </div>
 
             <div className='team--two'>
-                <Team members={teams[1].members} />
+                <Team members={match.teams[1].members} />
             </div>
         </div>
     );

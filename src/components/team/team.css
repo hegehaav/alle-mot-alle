@@ -15,11 +15,20 @@
     left: 190px;
 }
 
-.team-member {
+.team-member--container {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 5px solid #fcba03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+.team-member--img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 @keyframes shake {
