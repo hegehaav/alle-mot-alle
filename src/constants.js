@@ -1,7 +1,9 @@
-import kristoferImg from './assets/kristofer.jpg';
-import heinImg from './assets/hein.jpg';
-import linusImg from './assets/linus.jpg';
 import andreImg from './assets/andre.jpg';
+import heinImg from './assets/hein.jpg';
+import jobiImg from './assets/jobi.jpg';
+import unniImg from './assets/unni.jpg'
+import kristoferImg from './assets/kristofer.jpg';
+import linusImg from './assets/linus.jpg';
 
 export const teams = [
     {
@@ -10,6 +12,13 @@ export const teams = [
             { name: 'Kristofer Selbekk', img: kristoferImg },
             { name: 'Hein Haraldsen', img: heinImg },
         ],
+    },
+    {
+        name: 'Jonni',
+        members: [
+            { name: 'Unni Nyhamar Hinkel', img: unniImg },
+            { name: 'Unni Nyhamar Hinkel', img: jobiImg },
+        ]
     },
     {
         name: 'Ukjent',
