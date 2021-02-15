@@ -37,6 +37,6 @@ export const matches = [
     {
         id: 1,
         teams: [teams[0], teams[1]],
-        date: new Date('2021-02-15T18:00:00'),
+        date: new Date('2021-02-16T18:00:00'),
     },
 ];
