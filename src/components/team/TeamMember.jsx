@@ -1,8 +1,10 @@
 import React from 'react';
 
-const TeamMember = ({ img }) => {
+const TeamMember = ({ img, isFlying }) => {
+
+
     return (
-        <div className='team-member--container'>
+        <div className={`team-member--container ${isFlying ? "" : "team-member__danicng"}`}>
             {img
                 ? <img alt='team member' className='team-member--img' src={img} />
                 : <p>?</p>}

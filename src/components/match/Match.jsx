@@ -6,12 +6,8 @@ import Countdown from 'react-countdown';
 const Match = ({ match }) => {
     return (
         <div className='match--container'>
-            <Countdown
-                className='match-countdown'
-                date={match.date}
-            />
             <div className='team--one'>
-                <Team members={match.teams[0].members} />
+                <Team members={match.teams[0].members} isFlying={false} />
             </div>
             <div className='match-divider'>
                 <div className='line'></div>
@@ -20,7 +16,7 @@ const Match = ({ match }) => {
             </div>
 
             <div className='team--two'>
-                <Team members={match.teams[1].members} />
+                <Team members={match.teams[1].members} isFlying={false} />
             </div>
         </div>
     );

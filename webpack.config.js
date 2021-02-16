@@ -20,8 +20,8 @@ module.exports = {
                 },
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(scss|css)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.svg$/,
@@ -42,6 +42,10 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test: /\.mp3$/,
+                loader: 'file-loader'
+            }
         ],
     },
     resolve: {

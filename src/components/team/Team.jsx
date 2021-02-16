@@ -1,16 +1,16 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-import './team.css';
+import './team.scss';
 
-const Team = ({ members }) => {
+const Team = ({ members, isFlying }) => {
     return (
         <div className='team--container'>
-            <div className='team'>
+            <div className={`team ${isFlying ? "team__flying" : ""}`}>
                 <div className='team-member--one'>
-                    <TeamMember img={members[0].img} />
+                    <TeamMember isFlying={isFlying} img={members[0].img} />
                 </div>
                 <div className='team-member--two'>
-                    <TeamMember img={members[1].img} />
+                    <TeamMember isFlying={isFlying} img={members[1].img} />
                 </div>
             </div>
         </div>

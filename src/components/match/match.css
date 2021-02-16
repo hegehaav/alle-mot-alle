@@ -13,13 +13,13 @@
 .team--one {
     position: relative;
     left: -100%;
-    animation: slide-left 1s ease-in-out 0.5s forwards;
+    animation: slide-left 1s ease-in-out 2.5s forwards;
 }
 
 .team--two {
     position: relative;
     right: -100%;
-    animation: slide-right 1s ease-in-out 1s forwards;
+    animation: slide-right 1s ease-in-out 3s forwards;
 }
 
 .match-divider {
