@@ -1,9 +1,11 @@
-import andreImg from './assets/andre.jpg';
-import heinImg from './assets/hein.jpg';
-import jobiImg from './assets/jobi.jpg';
-import unniImg from './assets/unni.jpg';
-import kristoferImg from './assets/kristofer.jpg';
-import linusImg from './assets/linus.jpg';
+import heinImg from '../assets/hein.jpg';
+import jobiImg from '../assets/jobi.jpg';
+import unniImg from '../assets/unni.jpg';
+import kristoferImg from '../assets/kristofer.jpg';
+import kristineImg from '../assets/kristine.jpg';
+import hanskristianImg from '../assets/hanskristian.jpg';
+import asbjørnImg from '../assets/asbjørn.jpg';
+import erlendImg from '../assets/erlend.jpg';
 
 export const teams = [
     {
@@ -17,19 +19,26 @@ export const teams = [
         name: 'Jonni',
         members: [
             { name: 'Unni Nyhamar Hinkel', img: unniImg },
-            { name: 'Unni Nyhamar Hinkel', img: jobiImg },
+            { name: 'Jørn Ola Birkeland', img: jobiImg },
+        ],
+    },
+    {
+        name: 'Hans Kristine',
+        members: [
+            { name: 'Kristine Steine', img: kristineImg },
+            { name: 'Hans Kristian Henriksen', img: hanskristianImg },
+        ],
+    },
+    {
+        name: 'Faxbjørn',
+        members: [
+            { name: 'Asbjørn Steinskog', img: asbjørnImg },
+            { name: 'Erlend Faxvaag', img: erlendImg },
         ],
     },
     {
         name: 'Ukjent',
         members: [{ name: 'Spiller1' }, { name: 'Spiller2' }],
-    },
-    {
-        name: 'Svenskene',
-        members: [
-            { name: 'Sjakk-Linus', img: linusImg },
-            { name: 'Alle-mot-André', img: andreImg },
-        ],
     },
 ];
 
@@ -38,5 +47,13 @@ export const matches = [
         id: 1,
         teams: [teams[0], teams[1]],
         date: new Date('2021-02-16T18:00:00'),
+    },
+    {
+        id: 2,
+        teams: [
+            teams.find(team => team.name === "Hans Kristine"),
+            teams.find(team => team.name === "Faxbjørn"),
+        ],
+        date: new Date('2021-03-03T16:30:00'),
     },
 ];

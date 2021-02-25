@@ -1,5 +1,5 @@
 import React from 'react';
-import Match from './components/match/Match';
+import FeaturedMatch from './components/featuredMatch/FeaturedMatch';
 import { matches } from './constants.js';
 
 import './App.css';
@@ -9,7 +9,7 @@ const App = () => (
         <div className='title--container'>
             <h1 className='title'>BEKK MOT BEKK</h1>
         </div>
-        <Match match={matches[0]} />
+        <FeaturedMatch match={matches[1]} />
     </main>
 );
 

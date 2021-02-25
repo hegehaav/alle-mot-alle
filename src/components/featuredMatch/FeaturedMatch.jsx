@@ -1,9 +1,9 @@
 import React from 'react';
 import Team from '../team/Team';
-import './match.css';
+import './featuredMatch.css';
 import Countdown from 'react-countdown';
 
-const Match = ({ match }) => {
+const FeaturedMatch = ({ match }) => {
     return (
         <div className='match--container'>
             <Countdown
@@ -26,4 +26,4 @@ const Match = ({ match }) => {
     );
 };
 
-export default Match;
+export default FeaturedMatch;
