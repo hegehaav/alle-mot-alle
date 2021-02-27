@@ -9,6 +9,7 @@ import erlendImg from '../assets/erlend.jpg';
 
 export const teams = [
     {
+        id: 1,
         name: 'Heinkunnskap',
         members: [
             { name: 'Kristofer Selbekk', img: kristoferImg },
@@ -16,6 +17,7 @@ export const teams = [
         ],
     },
     {
+        id: 2,
         name: 'Jonni',
         members: [
             { name: 'Unni Nyhamar Hinkel', img: unniImg },
@@ -23,6 +25,7 @@ export const teams = [
         ],
     },
     {
+        id: 3,
         name: 'Hans Kristine',
         members: [
             { name: 'Kristine Steine', img: kristineImg },
@@ -30,23 +33,35 @@ export const teams = [
         ],
     },
     {
+        id: 4,
         name: 'Faxbjørn',
         members: [
             { name: 'Asbjørn Steinskog', img: asbjørnImg },
             { name: 'Erlend Faxvaag', img: erlendImg },
         ],
-    },
-    {
-        name: 'Ukjent',
-        members: [{ name: 'Spiller1' }, { name: 'Spiller2' }],
-    },
+    }
 ];
 
 export const matches = [
     {
         id: 1,
-        teams: [teams[0], teams[1]],
+        teams: [
+            teams.find(team => team.name === "Heinkunnskap"),
+            teams.find(team => team.name === "Jonni"),
+        ],
         date: new Date('2021-02-16T18:00:00'),
+        score: [
+            {
+                team: teams.find(team => team.name === "Jonni").name,
+                points: 25,
+                winner: false
+            },
+            {
+                team: teams.find(team => team.name === "Heinkunnskap").name,
+                points: 29,
+                winner: true
+            }
+        ]
     },
     {
         id: 2,
@@ -55,5 +70,6 @@ export const matches = [
             teams.find(team => team.name === "Faxbjørn"),
         ],
         date: new Date('2021-03-03T16:30:00'),
+        score: undefined
     },
 ];
