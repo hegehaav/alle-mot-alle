@@ -1,0 +1,164 @@
+@import "../../utils/variables.scss";
+
+$font-size: 3rem;
+.menu{
+    margin-bottom: 10vh;
+}
+
+.menu--container{
+    font-family: 'Fira Code', monospace;
+}
+@media screen and (max-width: 600px) {
+    .menu--flower{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $secondary-color;
+        text-align: center;
+        font-size: $font-size;
+        height: 50vh;
+
+    }
+
+    .menu--petal{
+        p {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            font-size: 3rem;
+            background: linear-gradient(to bottom, $secondary-color, $secondary-color 60%, $primary-color 60%, $primary-color 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-repeat: no-repeat;
+            white-space: nowrap;
+          }
+          
+          span {
+            position: relative;
+          }
+          
+          span:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 15px;
+            background: $secondary-color;
+            bottom: 9px;
+            transition: all 0.2s ease-out;
+          }
+          
+          p:hover {
+            background-position: 0 11px;
+          }
+          
+          span:hover:before {
+            transform: translateY(10px)
+          }
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .menu--container{
+
+        background-image: radial-gradient($secondary-color 5%, transparent 8%);
+        background-position: 0 0, 50px 50px;
+        background-size: 100px 100px;
+        
+        width: 80vw; 
+        height: 70vh;
+
+        color: $tertiary-color;
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu--title {
+        font-size: 3rem;
+        width: 7rem;
+        position: absolute;
+        top: 47%;
+        left: 44.5%;
+    }
+    
+    .menu--flower {
+        animation: spin 90s linear infinite;
+        position: absolute;
+        -webkit-box-pack: center;
+        
+        width: 75vw; 
+        height: 75vw;
+        max-height: 64vh;
+        max-width: 1200px;
+        min-width: 1000px;
+    }
+
+
+    .menu--petal {
+        position: absolute;
+        font-size: 1.8rem;
+        border-radius: 50;
+        border-radius: 50%;
+        border: 5px solid $secondary-color;
+        width: 12rem;
+        height: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+    
+        animation: counter-spin 90s linear infinite;
+    
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+    
+    .p1{
+        top: 9%;
+        left:41%
+    }
+    
+    .p2{
+        top: 24%;
+        left: 55%;
+    }
+    
+    .p3{
+        top: 53%;
+        left:55%
+    }
+    
+    .p4{
+        top: 67%;
+        left: 41%
+    }
+    
+    .p5{
+        top: 53%;
+        left: 27%;
+    }
+    
+    .p6{
+        top: 24%;
+        left:27%
+    }
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counter-spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,11 @@
+@import "utils/variables.scss";
+
+body {
+    margin: 0;
+    background-color: $primary-color;
+    font-family: 'Fira Code', monospace;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

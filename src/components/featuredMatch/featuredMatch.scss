@@ -1,0 +1,59 @@
+@import "../../utils/variables.scss";
+
+.match--container {
+    position: relative; 
+    height: 100vh; 
+    font-family: 'Caveat', cursive;
+    color: $secondary-color;
+}
+
+.match--title {
+    font-family: 'Fira Code', monospace;
+    font-size: 5rem;
+}
+.match-countdown {
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.team--one {
+    position: relative;
+    left: -100vw;
+    animation: slide-left 1s ease-in-out 0.5s forwards;
+}
+
+.team--two {
+    position: relative;
+    right: -100vw;
+    animation: slide-right 1s ease-in-out 1s forwards;
+}
+
+.match-divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 40%;
+    border-bottom: 1px solid white;
+}
+
+.match-divider--text {
+    font-size: 32px;
+}
+@keyframes slide-left {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-right {
+    100% {
+        right: 0;
+    }
+}

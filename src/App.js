@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Menu from './components/menu/Menu';
+import FeaturedMatch from './components/featuredMatch/FeaturedMatch';
+import { matches } from './utils/constants.js';
+
+import './App.scss';
+
+const App = () => {
+    const featuredMatchRef = useRef(null)
+    const scrollToRef = (ref) => {
+        if (ref !== null) {
+            window.scrollTo({
+                top: ref.current.offsetTop,
+                behavior: "smooth",
+            });
+        }
+    }
+
+    return (
+        <main className='main--container center'>
+            <div className='title--container'>
+                <h1 className='title'>BEKK MOT BEKK</h1>
+            </div>
+            <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} />
+            <FeaturedMatch scrollRef={featuredMatchRef} match={matches.find(match => match.date > Date.now())} />
+        </main>
+    );
 }
 
 export default App;
