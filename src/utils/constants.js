@@ -6,7 +6,16 @@ import kristineImg from '../assets/kristine.jpg';
 import hanskristianImg from '../assets/hanskristian.jpg';
 import asbjørnImg from '../assets/asbjørn.jpg';
 import erlendImg from '../assets/erlend.jpg';
-
+import alexanderImg from '../assets/alexander.jpg';
+import emilImg from '../assets/emil.jpg';
+import halvorImg from '../assets/halvor.jpg';
+import hermanImg from '../assets/herman.jpg';
+import mathiasImg from '../assets/mathias.jpg';
+import matsImg from '../assets/mats.jpg';
+import nemanjaImg from '../assets/nemanja.jpg';
+import øyvindImg from '../assets/øyvind.jpg';
+import ragnhildImg from '../assets/ragnhild.jpg';
+import rasmusImg from '../assets/rasmus.jpg';
 export const teams = [
     {
         id: 1,
@@ -39,6 +48,46 @@ export const teams = [
             { name: 'Asbjørn Steinskog', img: asbjørnImg },
             { name: 'Erlend Faxvaag', img: erlendImg },
         ],
+    },
+    {
+        id: 5,
+        name: 'Nemanja Mathias',
+        members: [
+            { name: 'Nemanja Aksic', img: nemanjaImg },
+            { name: 'Mathias Rørvik', img: mathiasImg },
+        ],
+    },
+    {
+        id: 6,
+        name: 'Ragnhild Herman',
+        members: [
+            { name: 'Ragnhild Liven', img: ragnhildImg },
+            { name: 'Herman Slyngstadli', img: hermanImg },
+        ],
+    },
+    {
+        id: 7,
+        name: 'Emil Øyvind',
+        members: [
+            { name: 'Emil Staurset', img: emilImg },
+            { name: 'Øyvind Skaar', img: øyvindImg },
+        ],
+    },
+    {
+        id: 8,
+        name: 'Rasmus Mats',
+        members: [
+            { name: 'Rasmus Bauck', img: rasmusImg },
+            { name: 'Mats Knutsen-Valen', img: matsImg },
+        ],
+    },
+    {
+        id: 9,
+        name: 'Alexander Halvor',
+        members: [
+            { name: 'Alexander Vassbotn Røyne-Helgesen', img: alexanderImg },
+            { name: 'Halvor Lund', img: halvorImg },
+        ],
     }
 ];
 
@@ -70,6 +119,33 @@ export const matches = [
             teams.find(team => team.name === "Faxbjørn"),
         ],
         date: new Date('2021-03-03T16:30:00'),
+        score: undefined
+    },
+    {
+        id: 3,
+        teams: [
+            teams.find(team => team.name === "Nemanja Mathias"),
+            teams.find(team => team.name === "Ragnhild Herman"),
+        ],
+        date: undefined,
+        score: undefined
+    },
+    {
+        id: 4,
+        teams: [
+            teams.find(team => team.name === "Emil Øyvind"),
+            teams.find(team => team.name === "Rasmus Mats"),
+        ],
+        date: undefined,
+        score: undefined
+    },
+    {
+        id: 5,
+        teams: [
+            teams.find(team => team.name === "Alexander Halvor"),
+            teams.find(team => team.name === "Heinkunnskap"),
+        ],
+        date: undefined,
         score: undefined
     },
 ];

@@ -16,24 +16,32 @@
     table {
         border-collapse: collapse;
         width: 80%;
-      }
+    }
 
-      th{
-         font-size: 1.5rem; 
-         color: $tertiary-color;
-      }
-      
-      td, th {
-        text-align: center;
-        padding: 8px;
-      }
-      tr:nth-child(even) {
+    th {
+        font-size: 1.5rem; 
+        color: $tertiary-color;
+    }
+    
+    td, th {
+    text-align: center;
+    padding: 8px;
+    width: 33%;
+    }
+
+    tr:hover {
+            color: $tertiary-color;
+        
+    }
+
+    tr:nth-child(even) {
         background-color: $secondary-color;
         color: $primary-color
-        }
-      tr:nth-child(odd) {
+    }
+
+    tr:nth-child(odd) {
         background-color: $primary-color;
         color: $secondary-color
-      }
+    }
 
 }
