@@ -3,11 +3,26 @@
 $font-size: 3rem;
 .menu{
     margin-bottom: 10vh;
+    height: 100vh;
 }
 
 .menu--container{
     font-family: 'Fira Code', monospace;
 }
+
+.title--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Alfa Slab One', cursive;
+    color: $secondary-color;
+    font-size: 5rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     .menu--flower{
         display: flex;
@@ -120,7 +135,7 @@ $font-size: 3rem;
     }
     
     .p1{
-        top: 9%;
+        top: 16%;
         left:41%
     }
     

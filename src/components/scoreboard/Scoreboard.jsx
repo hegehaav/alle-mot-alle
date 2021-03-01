@@ -5,7 +5,6 @@ import { getScore } from '../../utils/common';
 import './scoreboard.scss'
 
 const Scoreboard = ({ scrollRef }) => {
-    console.log(matches)
     return (
         <section className="scoreboard--container" ref={scrollRef}>
             <h1>Resultater</h1>
@@ -19,7 +18,7 @@ const Scoreboard = ({ scrollRef }) => {
                     {matches.map(match => (
                         <tr key={match.id}>
                             <td>{match.teams[0].members[0].name} og {match.teams[0].members[1].name}</td>
-                            <td>{getScore(match, 0)} - {getScore(match, 1)} </td>
+                            <td>{getScore(match, 0) ?? ""} - {getScore(match, 1) ?? ""} </td>
                             <td>{match.teams[1].members[0].name} og {match.teams[1].members[1].name}</td>
                         </tr>
                     ))}

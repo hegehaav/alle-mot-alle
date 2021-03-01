@@ -1,14 +1,16 @@
 import React from 'react';
 import './menu.scss'
-import MenuCard from './MenuCard';
 
-const Menu = ({ scrollTo, featuredMatchRef, scoreboardRef }) => (
+const Menu = ({ scrollTo, featuredMatchRef, scoreboardRef, tournamentRef }) => (
     <section className="menu">
+        <div className='title--container'>
+            <h1 className='title'>BEKK MOT BEKK</h1>
+        </div>
         <div className="menu--container">
             <div className="menu--flower">
                 <div onClick={() => scrollTo(featuredMatchRef)} className="menu--petal p1"><span><p>Neste kamp</p></span></div>
                 <div onClick={() => scrollTo(scoreboardRef)} className="menu--petal p3"><span><p>Resultater</p></span></div>
-                <MenuCard index={5} text="Kampoppsett" />
+                <div onClick={() => scrollTo(tournamentRef)} className="menu--petal p5"><span><p>Turnering</p></span></div>
             </div>
         </div>
     </section>

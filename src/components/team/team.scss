@@ -18,8 +18,10 @@
 }
 
 .team-member--container {
-    width: 200px;
-    height: 200px;
+    width: 25vh;
+    height: 25vh;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
     border: 5px solid $secondary-color;
     display: flex;
@@ -28,8 +30,11 @@
     font-size: 65px;
 }
 .team-member--img {
-    width: 200px;
-    height: 200px;
+    width: 25vh;
+    height: 25vh;
+    max-width: 200px;
+    max-height: 200px;
+
     border-radius: 50%;
 }
 
