@@ -37,7 +37,7 @@ const Tournament = ({ scrollRef }) => {
         <section ref={scrollRef} className="tournament--container">
             <h1>
                 Turnering
-        </h1>
+            </h1>
             <section className="tournament">
                 {tournamentMatches.map((match, index) =>
                     <Match
