@@ -14,8 +14,10 @@ const App = () => {
     const scoreboardRef = useRef(null);
     const tournamentRef = useRef(null);
 
+    const featuredMatch = matches.find(match => match.date > Date.now())
+
     const scrollToRef = (ref) => {
-        if (ref !== null) {
+        if (ref.current !== null) {
             window.scrollTo({
                 top: ref.current.offsetTop,
                 behavior: "smooth",
@@ -25,7 +27,7 @@ const App = () => {
     return (
         <main className='main--container center'>
             <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} scoreboardRef={scoreboardRef} tournamentRef={tournamentRef} />
-            <FeaturedMatch scrollRef={featuredMatchRef} match={matches.find(match => match.date > Date.now())} />
+            {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} />}
             <Scoreboard scrollRef={scoreboardRef} />
             <Tournament scrollRef={tournamentRef} />
 

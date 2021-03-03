@@ -7,10 +7,10 @@ const FeaturedMatch = ({ scrollRef, match }) => {
     return (
         <section ref={scrollRef} className='match--container'>
             <h1 className="match--title">Neste kamp</h1>
-            <Countdown
+            {match.date && <Countdown
                 className='match-countdown'
                 date={match.date}
-            />
+            />}
             <div className='team--one'>
                 <Team members={match.teams[0].members} />
             </div>
