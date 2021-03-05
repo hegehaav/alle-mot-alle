@@ -1,0 +1,24 @@
+@import "../../utils/variables.scss";
+
+.error-boundary{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-color;
+    text-align: center;
+
+    img {
+        height: 45vh;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    } 
+    .error-description {
+        width: 50vw;
+    }
+}

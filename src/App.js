@@ -8,6 +8,7 @@ import Tournament from './components/tournament/Tournament';
 import { matches } from './utils/constants.js';
 
 import './App.scss';
+import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 
 const App = () => {
     const featuredMatchRef = useRef(null);
@@ -26,11 +27,12 @@ const App = () => {
     }
     return (
         <main className='main--container center'>
-            <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} scoreboardRef={scoreboardRef} tournamentRef={tournamentRef} />
-            {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} />}
-            <Scoreboard scrollRef={scoreboardRef} />
-            <Tournament scrollRef={tournamentRef} />
-
+            <ErrorBoundary>
+                <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} scoreboardRef={scoreboardRef} tournamentRef={tournamentRef} />
+                {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} />}
+                <Scoreboard scrollRef={scoreboardRef} />
+                <Tournament scrollRef={tournamentRef} />
+            </ErrorBoundary>
         </main>
     );
 }
