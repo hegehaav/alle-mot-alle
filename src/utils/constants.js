@@ -35,6 +35,7 @@ export const teams = [
     },
     {
         id: 3,
+        name: 'Kristine og Hans Kristian',
         members: [
             { name: 'Kristine Steine', img: kristineImg },
             { name: 'Hans Kristian Henriksen', img: hanskristianImg },
