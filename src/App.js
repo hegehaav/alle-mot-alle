@@ -29,7 +29,7 @@ const App = () => {
         <main className='main--container center'>
             <ErrorBoundary>
                 <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} scoreboardRef={scoreboardRef} tournamentRef={tournamentRef} />
-                {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} />}
+                {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} match={featuredMatch} />}
                 <Scoreboard scrollRef={scoreboardRef} />
                 <Tournament scrollRef={tournamentRef} />
             </ErrorBoundary>

@@ -99,18 +99,7 @@ export const matches = [
             teams.find(team => team.name === "Jobi og Unni"),
         ],
         date: new Date('2021-02-16T18:00:00'),
-        score: [
-            {
-                team: teams.find(team => team.name === "Jobi og Unni").name,
-                points: 25,
-                winner: false
-            },
-            {
-                team: teams.find(team => team.name === "Hein og Kristofer").name,
-                points: 29,
-                winner: true
-            }
-        ]
+        score: [25, 29]
     },
     {
         id: 2,
@@ -119,7 +108,7 @@ export const matches = [
             teams.find(team => team.name === "Asbjørn og Erlend"),
         ],
         date: new Date('2021-03-03T16:30:00'),
-        score: undefined
+        score: [25, 16],
     },
     {
         id: 3,
@@ -127,7 +116,7 @@ export const matches = [
             teams.find(team => team.name === "Nemanja og Mathias"),
             teams.find(team => team.name === "Ragnhild og Herman"),
         ],
-        date: undefined,
+        date: new Date('2021-03-15T19:00:00'),
         score: undefined
     },
     {
@@ -136,7 +125,7 @@ export const matches = [
             teams.find(team => team.name === "Emil og Øyvind"),
             teams.find(team => team.name === "Rasmus og Mats"),
         ],
-        date: undefined,
+        date: new Date('2021-03-24T18:00:00'),
         score: undefined
     },
     {
@@ -145,7 +134,79 @@ export const matches = [
             teams.find(team => team.name === "Alexander og Halvor"),
             teams.find(team => team.name === "Hein og Kristofer"),
         ],
-        date: undefined,
+        date: new Date('2021-04-07T18:00:00'),
         score: undefined
     }
 ];
+
+export const semifinale1 = {
+    id: 0,
+    teams: [
+        {
+            id: 0,
+            name: 'Kristine og Hans Kristian',
+            members: [
+                { name: 'tba' },
+                { name: 'tba' },
+            ],
+        },
+        {
+            id: 0,
+            name: 'Vinner',
+            members: [
+                { name: 'tbd' },
+                { name: 'tbd' },
+            ],
+        },
+    ],
+    date: new Date('2021-04-13T18:00:00'),
+    score: undefined
+}
+
+export const semifinale2 = {
+    id: 0,
+    teams: [
+        {
+            id: 0,
+            name: 'Vinner',
+            members: [
+                { name: 'tba' },
+                { name: 'tba' },
+            ],
+        },
+        {
+            id: 0,
+            name: 'Vinner',
+            members: [
+                { name: 'tbd' },
+                { name: 'tbd' },
+            ],
+        },
+    ],
+    date: new Date('2021-04-20T18:00:00'),
+    score: undefined
+};
+
+export const finale = {
+    id: 0,
+    teams: [
+        {
+            id: 0,
+            name: 'Vinner',
+            members: [
+                { name: 'tba' },
+                { name: 'tba' },
+            ],
+        },
+        {
+            id: 0,
+            name: 'Vinner',
+            members: [
+                { name: 'tbd' },
+                { name: 'tbd' },
+            ],
+        },
+    ],
+    date: new Date('2021-04-27T18:00:00'),
+    score: undefined
+}

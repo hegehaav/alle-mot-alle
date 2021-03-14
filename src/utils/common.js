@@ -1,6 +1,16 @@
-export const getScore = (match, index) => {
-    if (match.score === undefined || match.score[index].points === undefined) {
+import { format } from "date-fns";
+
+export const getScore = (score, index) => {
+    if (!score || score.length !== 2) {
         return undefined
     }
-    return match.score[index].points;
+    return score[index];
+}
+
+export const getDate = (date) => {
+    if (!date) {
+        return undefined;
+    }
+
+    return format(date, "dd.MM.yy");
 }

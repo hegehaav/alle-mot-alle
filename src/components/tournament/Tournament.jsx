@@ -1,32 +1,8 @@
 import React from 'react';
 import Match from './Match';
 import './tournament.scss';
-import { matches } from '../../utils/constants';
+import { matches, semifinale1, semifinale2, finale } from '../../utils/constants';
 
-
-const placeHolderMatch = {
-    id: 0,
-    teams: [
-        {
-            id: 0,
-            name: 'Vinner',
-            members: [
-                { name: 'tba' },
-                { name: 'tba' },
-            ],
-        },
-        {
-            id: 0,
-            name: 'Vinner',
-            members: [
-                { name: 'tbd' },
-                { name: 'tbd' },
-            ],
-        },
-    ],
-    date: undefined,
-    score: undefined
-}
 
 const Tournament = ({ scrollRef }) => {
     const tournamentMatches = matches.filter(match =>
@@ -48,19 +24,19 @@ const Tournament = ({ scrollRef }) => {
                 )}
                 <Match
                     matchIndex={5}
-                    match={placeHolderMatch}
+                    match={semifinale1}
                 />
                 <Match
                     matchIndex={6}
-                    match={placeHolderMatch}
+                    match={semifinale2}
                 />
                 <Match
                     matchIndex={7}
-                    match={placeHolderMatch}
+                    match={finale}
                 />
             </section>
         </section>
     )
 }
 
-export default Tournament; 
+export default Tournament;
