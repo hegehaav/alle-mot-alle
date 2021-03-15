@@ -99,7 +99,7 @@ export const matches = [
             teams.find(team => team.name === "Jobi og Unni"),
         ],
         date: new Date('2021-02-16T18:00:00'),
-        score: [25, 29]
+        score: [29, 25]
     },
     {
         id: 2,
