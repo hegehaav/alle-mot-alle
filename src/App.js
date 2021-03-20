@@ -15,26 +15,36 @@ const App = () => {
     const scoreboardRef = useRef(null);
     const tournamentRef = useRef(null);
 
-    const featuredMatch = matches.find(match => match.date > Date.now())
+    const featuredMatch = matches.find((match) => match.date > Date.now());
 
     const scrollToRef = (ref) => {
         if (ref.current !== null) {
             window.scrollTo({
                 top: ref.current.offsetTop,
-                behavior: "smooth",
+                behavior: 'smooth',
             });
         }
-    }
+    };
     return (
         <main className='main--container center'>
             <ErrorBoundary>
-                <Menu scrollTo={scrollToRef} featuredMatchRef={featuredMatchRef} scoreboardRef={scoreboardRef} tournamentRef={tournamentRef} />
-                {featuredMatch && <FeaturedMatch scrollRef={featuredMatchRef} match={featuredMatch} />}
+                <Menu
+                    scrollTo={scrollToRef}
+                    featuredMatchRef={featuredMatchRef}
+                    scoreboardRef={scoreboardRef}
+                    tournamentRef={tournamentRef}
+                />
+                {featuredMatch && (
+                    <FeaturedMatch
+                        scrollRef={featuredMatchRef}
+                        match={featuredMatch}
+                    />
+                )}
                 <Scoreboard scrollRef={scoreboardRef} />
                 <Tournament scrollRef={tournamentRef} />
             </ErrorBoundary>
         </main>
     );
-}
+};
 
 export default App;

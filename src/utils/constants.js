@@ -88,24 +88,24 @@ export const teams = [
             { name: 'Alexander Vassbotn Røyne-Helgesen', img: alexanderImg },
             { name: 'Halvor Lund', img: halvorImg },
         ],
-    }
+    },
 ];
 
 export const matches = [
     {
         id: 1,
         teams: [
-            teams.find(team => team.name === "Hein og Kristofer"),
-            teams.find(team => team.name === "Jobi og Unni"),
+            teams.find((team) => team.name === 'Hein og Kristofer'),
+            teams.find((team) => team.name === 'Jobi og Unni'),
         ],
         date: new Date('2021-02-16T18:00:00'),
-        score: [29, 25]
+        score: [29, 25],
     },
     {
         id: 2,
         teams: [
-            teams.find(team => team.name === "Kristine og Hans Kristian"),
-            teams.find(team => team.name === "Asbjørn og Erlend"),
+            teams.find((team) => team.name === 'Kristine og Hans Kristian'),
+            teams.find((team) => team.name === 'Asbjørn og Erlend'),
         ],
         date: new Date('2021-03-03T16:30:00'),
         score: [25, 16],
@@ -113,55 +113,40 @@ export const matches = [
     {
         id: 3,
         teams: [
-            teams.find(team => team.name === "Nemanja og Mathias"),
-            teams.find(team => team.name === "Ragnhild og Herman"),
+            teams.find((team) => team.name === 'Nemanja og Mathias'),
+            teams.find((team) => team.name === 'Ragnhild og Herman'),
         ],
         date: new Date('2021-03-15T19:00:00'),
-        score: undefined
+        score: [25, 18],
     },
     {
         id: 4,
         teams: [
-            teams.find(team => team.name === "Emil og Øyvind"),
-            teams.find(team => team.name === "Rasmus og Mats"),
+            teams.find((team) => team.name === 'Emil og Øyvind'),
+            teams.find((team) => team.name === 'Rasmus og Mats'),
         ],
         date: new Date('2021-03-24T18:00:00'),
-        score: undefined
+        score: undefined,
     },
     {
         id: 5,
         teams: [
-            teams.find(team => team.name === "Alexander og Halvor"),
-            teams.find(team => team.name === "Hein og Kristofer"),
+            teams.find((team) => team.name === 'Alexander og Halvor'),
+            teams.find((team) => team.name === 'Hein og Kristofer'),
         ],
         date: new Date('2021-04-07T18:00:00'),
-        score: undefined
-    }
+        score: undefined,
+    },
+    {
+        id: 6,
+        teams: [
+            teams.find((team) => team.name === 'Kristine og Hans Kristian'),
+            teams.find((team) => team.name === 'Nemanja og Mathias'),
+        ],
+        date: new Date('2021-04-13T18:00:00'),
+        score: undefined,
+    },
 ];
-
-export const semifinale1 = {
-    id: 0,
-    teams: [
-        {
-            id: 0,
-            name: 'Kristine og Hans Kristian',
-            members: [
-                { name: 'tba' },
-                { name: 'tba' },
-            ],
-        },
-        {
-            id: 0,
-            name: 'Vinner',
-            members: [
-                { name: 'tbd' },
-                { name: 'tbd' },
-            ],
-        },
-    ],
-    date: new Date('2021-04-13T18:00:00'),
-    score: undefined
-}
 
 export const semifinale2 = {
     id: 0,
@@ -169,22 +154,16 @@ export const semifinale2 = {
         {
             id: 0,
             name: 'Vinner',
-            members: [
-                { name: 'tba' },
-                { name: 'tba' },
-            ],
+            members: [{ name: 'tba' }, { name: 'tba' }],
         },
         {
             id: 0,
             name: 'Vinner',
-            members: [
-                { name: 'tbd' },
-                { name: 'tbd' },
-            ],
+            members: [{ name: 'tbd' }, { name: 'tbd' }],
         },
     ],
     date: new Date('2021-04-20T18:00:00'),
-    score: undefined
+    score: undefined,
 };
 
 export const finale = {
@@ -193,20 +172,14 @@ export const finale = {
         {
             id: 0,
             name: 'Vinner',
-            members: [
-                { name: 'tba' },
-                { name: 'tba' },
-            ],
+            members: [{ name: 'tba' }, { name: 'tba' }],
         },
         {
             id: 0,
             name: 'Vinner',
-            members: [
-                { name: 'tbd' },
-                { name: 'tbd' },
-            ],
+            members: [{ name: 'tbd' }, { name: 'tbd' }],
         },
     ],
     date: new Date('2021-04-27T18:00:00'),
-    score: undefined
-}
+    score: undefined,
+};
