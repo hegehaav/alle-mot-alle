@@ -122,19 +122,19 @@ export const matches = [
     {
         id: 4,
         teams: [
-            teams.find((team) => team.name === 'Emil og Øyvind'),
-            teams.find((team) => team.name === 'Rasmus og Mats'),
+            teams.find((team) => team.name === 'Alexander og Halvor'),
+            teams.find((team) => team.name === 'Hein og Kristofer'),
         ],
-        date: new Date('2021-03-24T18:00:00'),
+        date: new Date('2021-04-07T18:00:00'),
         score: undefined,
     },
     {
         id: 5,
         teams: [
-            teams.find((team) => team.name === 'Alexander og Halvor'),
-            teams.find((team) => team.name === 'Hein og Kristofer'),
+            teams.find((team) => team.name === 'Emil og Øyvind'),
+            teams.find((team) => team.name === 'Rasmus og Mats'),
         ],
-        date: new Date('2021-04-07T18:00:00'),
+        date: new Date('2021-04-08T18:00:00'),
         score: undefined,
     },
     {
