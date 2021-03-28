@@ -1,12 +1,13 @@
-@import "../../utils/variables.scss";
+@import '../../utils/variables.scss';
 
+$petal-size: 12rem;
 $font-size: 3rem;
-.menu{
+.menu {
     margin-bottom: 10vh;
     height: 100vh;
 }
 
-.menu--container{
+.menu--container {
     font-family: 'Fira Code', monospace;
 }
 
@@ -24,7 +25,7 @@ $font-size: 3rem;
 }
 
 @media screen and (max-width: 600px) {
-    .menu--flower{
+    .menu--flower {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -32,29 +33,34 @@ $font-size: 3rem;
         text-align: center;
         font-size: $font-size;
         height: 50vh;
-
     }
 
-    .menu--petal{
+    .menu--petal {
         p {
             cursor: pointer;
             position: relative;
             display: inline-block;
             font-size: 3rem;
-            background: linear-gradient(to bottom, $secondary-color, $secondary-color 60%, $primary-color 60%, $primary-color 100%);
+            background: linear-gradient(
+                to bottom,
+                $secondary-color,
+                $secondary-color 60%,
+                $primary-color 60%,
+                $primary-color 100%
+            );
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             background-repeat: no-repeat;
             white-space: nowrap;
-          }
-          
-          span {
+        }
+
+        span {
             position: relative;
-          }
-          
-          span:before {
-            content: "";
+        }
+
+        span:before {
+            content: '';
             position: absolute;
             left: 0;
             right: 0;
@@ -62,35 +68,33 @@ $font-size: 3rem;
             background: $secondary-color;
             bottom: 9px;
             transition: all 0.2s ease-out;
-          }
-          
-          p:hover {
+        }
+
+        p:hover {
             background-position: 0 11px;
-          }
-          
-          span:hover:before {
-            transform: translateY(10px)
-          }
+        }
+
+        span:hover:before {
+            transform: translateY(10px);
+        }
     }
 }
 
 @media screen and (min-width: 601px) {
-    .menu--container{
-
+    .menu--container {
         background-image: radial-gradient($secondary-color 5%, transparent 8%);
         background-position: 0 0, 50px 50px;
         background-size: 100px 100px;
-        
-        width: 80vw; 
+
+        width: 80vw;
         height: 70vh;
 
         color: $tertiary-color;
         position: relative;
-        
+
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .menu--title {
@@ -100,19 +104,22 @@ $font-size: 3rem;
         top: 47%;
         left: 44.5%;
     }
-    
-    .menu--flower {
+
+    .menu-flower--container {
+        position: relative;
         animation: spin 90s linear infinite;
+    }
+
+    .menu--flower {
         position: absolute;
         -webkit-box-pack: center;
-        
-        width: 75vw; 
+
+        width: 75vw;
         height: 75vw;
         max-height: 64vh;
         max-width: 1200px;
         min-width: 1000px;
     }
-
 
     .menu--petal {
         position: absolute;
@@ -120,51 +127,48 @@ $font-size: 3rem;
         border-radius: 50;
         border-radius: 50%;
         border: 5px solid $secondary-color;
-        width: 12rem;
-        height: 12rem;
+        width: $petal-size;
+        height: $petal-size;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $primary-color;
-    
+
         animation: counter-spin 90s linear infinite;
-    
-        &:hover{
+
+        &:hover {
             background-color: $secondary-color;
         }
     }
-    
-    .p1{
-        top: 16%;
-        left:41%
+
+    .p1 {
+        top: -$petal-size;
+        left: -$petal-size/2;
     }
-    
-    .p2{
+
+    .p2 {
         top: 24%;
         left: 55%;
     }
-    
-    .p3{
-        top: 53%;
-        left:55%
+
+    .p3 {
+        left: -$petal-size - 1rem;
     }
-    
-    .p4{
+
+    .p4 {
         top: 67%;
-        left: 41%
+        left: 41%;
     }
-    
-    .p5{
-        top: 53%;
+
+    .p5 {
+        left: 1rem;
+    }
+
+    .p6 {
+        top: 24%;
         left: 27%;
     }
-    
-    .p6{
-        top: 24%;
-        left:27%
-    }
 }
-
 
 @keyframes spin {
     100% {
