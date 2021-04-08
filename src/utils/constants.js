@@ -126,7 +126,7 @@ export const matches = [
             teams.find((team) => team.name === 'Hein og Kristofer'),
         ],
         date: new Date('2021-04-07T18:00:00'),
-        score: undefined,
+        score: [24, 17],
     },
     {
         id: 5,
@@ -153,7 +153,7 @@ export const semifinale2 = {
     teams: [
         {
             id: 0,
-            name: 'Vinner',
+            name: 'Alexander og Halvor',
             members: [{ name: 'tba' }, { name: 'tba' }],
         },
         {

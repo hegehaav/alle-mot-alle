@@ -29,19 +29,21 @@
     width: 33%;
     }
 
+    tr{
+        color: $tertiary-color;
+        font-size: 1.2rem;
+    }
+
     tr:hover {
-            color: $tertiary-color;
-        
+        color: $tertiary-color;
     }
 
     tr:nth-child(even) {
         background-color: $secondary-color;
-        color: $primary-color
     }
 
     tr:nth-child(odd) {
         background-color: $primary-color;
-        color: $secondary-color
     }
 
 }
