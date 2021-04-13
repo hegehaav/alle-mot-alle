@@ -135,7 +135,7 @@ export const matches = [
             teams.find((team) => team.name === 'Rasmus og Mats'),
         ],
         date: new Date('2021-04-08T18:00:00'),
-        score: undefined,
+        score: [21, 26],
     },
     {
         id: 6,
@@ -143,7 +143,7 @@ export const matches = [
             teams.find((team) => team.name === 'Kristine og Hans Kristian'),
             teams.find((team) => team.name === 'Nemanja og Mathias'),
         ],
-        date: new Date('2021-04-13T18:00:00'),
+        date: new Date('2021-04-13T19:00:00'),
         score: undefined,
     },
 ];
@@ -151,18 +151,11 @@ export const matches = [
 export const semifinale2 = {
     id: 0,
     teams: [
-        {
-            id: 0,
-            name: 'Alexander og Halvor',
-            members: [{ name: 'tba' }, { name: 'tba' }],
-        },
-        {
-            id: 0,
-            name: 'Vinner',
-            members: [{ name: 'tbd' }, { name: 'tbd' }],
-        },
+        teams.find((team) => team.name === 'Alexander og Halvor'),
+        teams.find((team) => team.name === 'Rasmus og Mats'),
+
     ],
-    date: new Date('2021-04-20T18:00:00'),
+    date: new Date('2021-04-22T18:00:00'),
     score: undefined,
 };
 
